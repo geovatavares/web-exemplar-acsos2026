@@ -1,0 +1,15 @@
+{
+  "name": "ADHuman WCAG Mitigation Agent",
+  "description": "WCAG adaptive agent with staged autonomy.",
+  "version": "3.1",
+  "manifest_version": 3,
+  "permissions": [],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["adhuman-core.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
